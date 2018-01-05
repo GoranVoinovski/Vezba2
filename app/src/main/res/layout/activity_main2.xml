@@ -1,9 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.goran.vezba.Main2Activity">
 
-</android.support.constraint.ConstraintLayout>
+
+
+    <TextView
+        android:id="@+id/imerestoran"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/slikaRestoran"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/imerestoran"/>
+
+
+    <TextView
+        android:id="@+id/rejting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/slikaRestoran"/>
+
+    <TextView
+        android:id="@+id/city"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rejting"/>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvMeni"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/city">
+
+    </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>
