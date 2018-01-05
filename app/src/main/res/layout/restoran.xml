@@ -30,7 +30,6 @@
         android:id="@+id/rejting"
         android:layout_alignParentRight="true"
         android:layout_marginTop="30dp"
-        android:drawableLeft="@mipmap/ratingrestoranlayout"
         android:layout_below="@+id/imerestoran"
         android:gravity="center"
         android:layout_width="70dp"
